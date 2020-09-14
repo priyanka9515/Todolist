@@ -12,6 +12,7 @@ class list extends Component {
     this.state = {
       count: 0,
       show: true,
+      abc: 5,
     };
   }
 
