@@ -5,6 +5,7 @@ class bus extends React.Component {
       <div>
         <h2> {this.props.brand}</h2>
         <h1>{this.props.number}</h1>
+        <h2>{this.props.ab}</h2>
       </div>
     );
   }

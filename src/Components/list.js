@@ -19,14 +19,16 @@ class list extends Component {
   render() {
     return (
       <div>
-        {this.state.count}
-        <button
-          onClick={this.handleonClick}
-          style={{ backgroundColor: "blue" }}
-        >
-          increment
-        </button>
-        <button onClick={this.handleonClick1}>decrement</button>
+        <div>
+          {this.state.count}
+          <button
+            onClick={this.handleonClick}
+            style={{ backgroundColor: "blue" }}
+          >
+            increment
+          </button>
+          <button onClick={this.handleonClick1}>decrement</button>
+        </div>
       </div>
     );
   }
