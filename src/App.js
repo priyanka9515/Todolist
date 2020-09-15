@@ -1,5 +1,10 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  BrowserRouter,
+} from "react-router-dom";
 import logo from "./logo.svg";
 import "./App.css";
 // import List from "./Components/list";
@@ -13,29 +18,16 @@ import Default from "./Components/Default";
 import Cart from "./Components/Cart";
 
 class App extends Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     abc: 5,
-  //   };
-  // }
   render() {
     return (
-      // <div className="App">
-      //   {/* <h1>fcxv</h1>
-      // <h2>bdb</h2> */}
-      //   <List />
-      //   <Pop />
-      // </div>
       <React.Fragment>
         <Navbar />
         <Switch>
-          <Route path="/" Component={ProductList} />
+          <Route exact path="/" component={ProductList} />
+          <Route path="/details" component={Details} />
+          <Route path="/cart" component={Cart} />
 
-          <Route path="/details" Component={Details} />
-          <Route path="/cart" Component={Cart} />
-
-          <Route Component={Default} />
+          <Route component={Default}></Route>
         </Switch>
       </React.Fragment>
     );
