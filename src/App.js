@@ -1,11 +1,6 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  BrowserRouter,
-} from "react-router-dom";
-import logo from "./logo.svg";
+import { Switch, Route } from "react-router-dom";
+// import logo from "./logo.svg";
 import "./App.css";
 // import List from "./Components/list";
 // import Pop from "./Components/pop";

@@ -6,14 +6,14 @@ class Navbar extends Component {
   render() {
     return (
       <nav
-        className="navbar navbar-expand-sm navbar-dark px-sm-5"
-        style={{ backgroundColor: "blue", height: "8" }}
+        className="navbar navbar-expand-sm navbar-black px-sm-5"
+        style={{ backgroundColor: "blue", height: "10" }}
       >
         <Link to="/">
           <img src={logo} alt="store" />
         </Link>
         <ul className="navbar-nav.align-items">
-          <li className="nav-item ml-5">
+          <li className="nav-item ml-auto">
             <Link to="/" className="nav-link">
               products
             </Link>
