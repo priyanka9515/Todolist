@@ -1,12 +1,14 @@
 import React, { Component } from "react";
-import Product from "./Product";
+// import Product from "./Product";
 import Title from "./Title";
+import { storeProducts } from "../Data";
 
 class ProductList extends Component {
-  // state = {
-  //   product =[]
-  // };
+  state = {
+    products: storeProducts,
+  };
   render() {
+    // console.log(this.state.products);
     return (
       <React.Fragment>
         <div className="py-5">
